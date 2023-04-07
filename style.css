@@ -628,6 +628,8 @@ header.active {
 .graduates__item img {
   width: 341px;
   height: 412px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .overlay {
@@ -905,7 +907,9 @@ header.active {
 
 .form-communication__wrap {
   position: relative;
-  background: var(--gradient-form-mob);
+  background: var(--gradient-form-mob);  
+  border-radius: 10px;
+  padding: 48px 37px 117px 37px;
 }
 
 .form__bottom-label {
@@ -918,6 +922,64 @@ header.active {
   bottom: -13px;
   object-fit: cover;
   border-radius: 7.5px;
+}
+
+.form-communication {
+  padding-top: 150px;
+  padding-bottom: 48px;
+}
+
+
+.form-communication-left-part .logo {
+  display: block;
+  margin-bottom: 31px;
+}
+
+.form-communication-left-part p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.04;
+  color: var(--main-light-color);
+  margin-bottom: 47px;
+}
+
+.form-communication-right-part input {
+  height: 32px;
+}
+
+.form-communication-right-part input,
+.form-communication-right-part textarea{
+  width: 100%;
+  background-color: unset;
+  border: 0;
+  border-bottom: 1px solid;
+  margin-bottom: 23px;
+}
+
+.form-communication-right-part input,
+.form-communication-right-part textarea {
+  border-color: #f4f4f4;
+  color: var(--main-light-color);
+}
+
+.form-communication-right-part input:focus,
+.form-communication-right-part textarea:focus {
+  outline: none;
+  border-bottom: 1px solid var(--main-light-violet-color);
+}
+
+::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.form-communication-right-part ::placeholder {
+  color: var(--main-light-color);
+}
+
+.form-communication-right-part .main__btn {
+  border: 0;
+  margin: 0 auto;
 }
 
 .footer__top,
@@ -1199,8 +1261,6 @@ header.active {
     padding-left: 75px;
   }
 
-
-
   .news__item {
     width: 712px;
     height: 512px;
@@ -1237,7 +1297,9 @@ header.active {
     width: 334px;
     margin-bottom: 0;
   }
-
+  .form-communication {
+    padding-top: 76px;
+  }
   .form-communication__wrap {
     background: var(--gradient-form);
   }
@@ -1252,7 +1314,19 @@ header.active {
     width: 45%;
   }
 }
+@media screen and (min-width: 840px) {
+  .form-communication__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 36px;
+    padding: 76px 140px 82px 112px;
+  }
+  .form-communication-right-part {
+    max-width: 467px;
+  }
 
+}
 @media screen and (min-width: 1024px) {
 
   .hero__container {
@@ -1356,17 +1430,21 @@ header.active {
   .graduates__item {
     max-width: 421px;
     height: 512px;
-
+  zoom: 0.75;
   }
-
+  .graduates__item:nth-child(-n+3){
+    margin-bottom: 34px;
+    }
+    .graduates__item img{
+      width: 100%;
+      max-width: 421px;
+      height: 512px;
+    }
   .graduates__item:hover .overlay,
   .graduates__item:focus .overlay {
     display: block;
     transform: translateY(0);
   }
-
-
-
   .overlay {
     display: none;
     position: absolute;
@@ -1393,6 +1471,7 @@ header.active {
     backdrop-filter: blur(100px);
     border-radius: 30px;
     border: 2px solid var(--main-light-color);
+    zoom: 0.75;
   }
 
   .graduates__item-registration span {
@@ -1415,7 +1494,16 @@ header.active {
   .preview__container {
     padding-bottom: 192px;
   }
-
+  .form-communication {
+    padding-bottom: 217px;
+  }
+  .form-communication__wrap {
+    zoom: 0.8;
+    padding-left: 92px;
+  }
+  .form-communication-left-part p {
+    font-size: 50px;
+  }
   .footer__top-container {
     padding-top: 55px;
     padding-bottom: 62px;
@@ -1453,23 +1541,19 @@ header.active {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .menu__container {
-    overflow-y: inherit;
-    padding-top: 110px;
-    padding-bottom: 380px;
+@media screen and (min-width: 1180px) {
+  .graduates__item,
+  .graduates__item-registration {
+    zoom: 0.87;
   }
-
-  .menu__list li {
-    font-size: 30px;
-  }
-
-  .menu__list a {
-    height: 111px;
+  .form-communication__wrap{
+    zoom: 0.9;
   }
 }
 
+
 @media screen and (min-width: 1330px) {
+
   .title {
     font-size: 50px;
     line-height: 1.2;
@@ -1522,7 +1606,10 @@ header.active {
     font-size: 45px;
     line-height: 1, 11;
   }
-
+  .graduates__item,
+  .graduates__item-registration {
+    zoom: 1;
+  }
   .courses__left-part li {
     width: 258px;
   }
@@ -1578,133 +1665,22 @@ header.active {
   .news__item-inner .base__text-small {
     display: none;
   }
+  .form-communication__wrap{
+    zoom: 1;
+  }
 }
 
-.form-communication {
-  padding-top: 150px;
-  padding-bottom: 48px;
-}
+@media screen and (min-width:1440px) {
+  .menu__container {
+    padding-top: 110px;
+    padding-bottom: 380px;
+  }
 
-.form-communication__wrap {
-  position: relative;
-  border-radius: 10px;
-  padding: 48px 37px 117px 37px;
-  z-index: -2;
-}
+  .menu__list li {
+    font-size: 30px;
+  }
 
-.form-communication-left-part .logo {
-  display: block;
-  margin-bottom: 31px;
-}
-
-.form-communication-left-part p {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.04;
-  color: var(--main-light-color);
-  margin-bottom: 47px;
-}
-
-.form-communication-left-part span {
-  display: block;
-  color: var(--main-light-color);
-  margin-bottom: 22px;
-}
-
-.form-communication-right-part input,
-.tutorial__right-part input {
-  height: 32px;
-}
-
-.form-communication-right-part input,
-.form-communication-right-part textarea,
-.tutorial__right-part input,
-.tutorial textarea {
-  width: 100%;
-  background-color: unset;
-  border: 0;
-  border-bottom: 1px solid;
-  margin-bottom: 23px;
-}
-
-.form-communication-right-part input,
-.form-communication-right-part textarea {
-  border-color: #f4f4f4;
-  color: var(--main-light-color);
-}
-
-.form-communication-right-part input:focus,
-.form-communication-right-part textarea:focus {
-  outline: none;
-  border-bottom: 1px solid var(--main-gray-color);
-}
-
-::placeholder {
-  font-weight: 400;
-  font-size: 12px;
-}
-
-.form-communication-right-part ::placeholder {
-  color: var(--main-light-color);
-}
-
-.form-communication-right-part .main__btn {
-  border: 0;
-  margin: 0 auto;
-}
-
-.form-communication__overlay {
-  position: absolute;
-  top: -1px;
-  left: -1px;
-  width: 101%;
-  height: 101%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #d9d9d9;
-  border: 1px solid #ffffff;
-  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.05);
-  border-radius: 15px;
-}
-
-.form-communication__overlay a {
-  position: absolute;
-  top: 26px;
-  right: 17px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 36px;
-  height: 36px;
-  background-color: var(--main-gold-color);
-  border-radius: 50%;
-}
-
-.form-communication__overlay a img {
-  width: 13px;
-  height: 13px;
-}
-
-.check {
-  width: 69px;
-  height: 69px;
-  margin: 0 auto 12px auto;
-}
-
-.form-communication__overlay p {
-  font-weight: 700;
-  font-size: 30px;
-  color: var(--main-blue-color);
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.form-communication__overlay span {
-  display: block;
-  font-weight: 400;
-  font-size: 12px;
-  color: var(--main-blue-color);
-  text-align: center;
+  .menu__list a {
+    height: 111px;
+  }
 }
