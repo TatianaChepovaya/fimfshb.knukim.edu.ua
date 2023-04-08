@@ -842,7 +842,48 @@ header.active {
 .courses__item .base__text-small {
   margin-bottom: 18px;
 }
-
+.courses__slider .slick-dots,
+.news__slider .slick-dots,
+.direction__slider .slick-dots {
+  bottom: -50px;
+}
+.courses__slider .slick-dots li,
+.news__slider .slick-dots li,
+.direction__slider .slick-dots li {
+  width: 20px;
+  height: 20px;
+  margin-right: 7px;
+}
+.courses__slider .slick-dots li button,
+.news__slider .slick-dots li button,
+.direction__slider .slick-dots li button {
+  width: 0;
+  height: 0;
+  padding: 0;
+}
+.courses__slider .slick-dots li button:before,
+.news__slider .slick-dots li button:before,
+.direction__slider .slick-dots li button:before {
+  content: '';
+  font-size: 0;
+  line-height: 0;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background:var(--main-light-color);
+  border-radius: 50%;
+  opacity: 1;
+}
+.courses__slider .slick-dots li.slick-active button:before ,
+.news__slider .slick-dots li.slick-active button:before ,
+.direction__slider .slick-dots li.slick-active button:before {
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+  background-color: var(--main-light-violet-color);
+  border: 5px solid var(--main-light-color);
+}
 .btn__registration {
   font-weight: 500;
   font-size: 15px;
@@ -925,8 +966,8 @@ header.active {
 }
 
 .form-communication {
-  padding-top: 150px;
-  padding-bottom: 48px;
+  padding-top: 57px;
+  padding-bottom: 62px;
 }
 
 
@@ -976,7 +1017,10 @@ header.active {
 .form-communication-right-part ::placeholder {
   color: var(--main-light-color);
 }
-
+.form__btn{
+position: relative;
+z-index: 10;
+}
 .form-communication-right-part .main__btn {
   border: 0;
   margin: 0 auto;
@@ -1314,19 +1358,7 @@ header.active {
     width: 45%;
   }
 }
-@media screen and (min-width: 840px) {
-  .form-communication__wrap {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 36px;
-    padding: 76px 140px 82px 112px;
-  }
-  .form-communication-right-part {
-    max-width: 467px;
-  }
 
-}
 @media screen and (min-width: 1024px) {
 
   .hero__container {
@@ -1495,11 +1527,18 @@ header.active {
     padding-bottom: 192px;
   }
   .form-communication {
-    padding-bottom: 217px;
+    padding-top: 220px;
+    padding-bottom: 181px;
   }
   .form-communication__wrap {
     zoom: 0.8;
-    padding-left: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 76px 140px 82px 112px;
+  }
+  .form-communication-right-part {
+    max-width: 467px;
   }
   .form-communication-left-part p {
     font-size: 50px;
