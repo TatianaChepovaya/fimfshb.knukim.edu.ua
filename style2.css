@@ -1,0 +1,137 @@
+:root {
+    --main-light-color: #ffffff;
+    --main-dark-color: #3e2a36;
+    --main-violet-color: #390d66;
+    --main-light-violet-color: #5a288f;
+    --main-gray-color: #9e9c9c;
+    --main-dark-gray-color: #514c4c;
+    --main--green-color: #31a590;
+    --gradient-main: linear-gradient(216.06deg, #74067d 21.07%, #19e7da 105.09%);
+    --gradient-card: linear-gradient(0deg, #2abfbf 0%, rgba(255, 255, 255, 0) 60.16%);
+    --gradient-form: linear-gradient(90deg, #7462d1 0%, #3de1e2 100%);
+    --gradient-form-mob: linear-gradient(175.71deg, #7365d2 27.27%, #46cde0 61.14%);
+    --gradient-line-two: linear-gradient(89.68deg, #50067d -1.71%, #19e7da 107.28%);
+    --gradient-line-one: linear-gradient(270.08deg, #50067d -35.54%, #61fff6 98.12%);
+    --gradient-event-btn: linear-gradient(216.06deg, #ffffff 21.07%, #19e7da 105.09%);
+    --gradient-fashion: linear-gradient(90deg, #d162c6 0%, #351396 100%);
+    --gradient-fashion-mob: linear-gradient(175.71deg, #CA5FC4 27.27%, #7031A8 61.14%);
+    --gradient-fashion-line-two: linear-gradient(89.68deg, #50067d -1.71%, #e3adf5 107.28%);
+    --gradient-business: linear-gradient(90deg, #e737be 0%, #42f1cd 100%);
+    --gradient-business-mob: linear-gradient(175.71deg, #E737BE 0.87%, #19E7DA 96.51%);
+    --gradient-business-line-two: linear-gradient(89.68deg, #42f1cd -1.71%, #f4ff2a 107.28%);
+}
+
+.header__container-inner .menu__btn span,
+.header__container-inner .menu__btn.active .open {
+    background: var(--main-light-color);
+}
+
+.header__container-inner .menu__btn .close {
+    color: var(--main-violet-color);
+}
+
+.header__container-inner .menu__btn .close svg,
+.header__container-inner .menu__btn .open svg {
+    fill: var(--main-violet-color);
+}
+
+#event .menu__btn:hover .open,
+#event .menu__btn:hover .close {
+    background: linear-gradient(0deg, #E030E3 11.13%, rgba(255, 255, 255, 0) 135.5%);
+}
+
+#fashion .menu__btn:hover .open,
+#fashion .menu__btn:hover .close {
+    background: linear-gradient(0deg, #3C2685 0%, rgba(255, 255, 255, 0) 100.16%);
+}
+
+.header__container-inner .menu__btn:hover .open svg,
+.header__container-inner .menu__btn:hover .close svg {
+    fill: var(--main-light-color);
+}
+
+.header__container-inner .menu__btn:hover .close {
+    color: var(--main-light-color);
+}
+
+#event .menu.active,
+#event header.active {
+    background: #10023d
+}
+
+#fashion .menu.active,
+#fashion header.active {
+    background: #842086
+}
+
+#business .menu.active,
+#business header.active {
+    background: #252525;
+}
+
+.menu__dark .menu__list li {
+    border-color: var(--main-light-color);
+}
+
+.menu__dark .menu__list a {
+    color: var(--main-light-color);
+}
+
+.menu__dark .menu__list li svg {
+    fill: var(--main-light-color);
+}
+
+#event .menu__list li:hover,
+#event .menu__list li:focus {
+    background: linear-gradient(0deg, #E030E3 11.13%, rgba(255, 255, 255, 0) 66.5%);
+}
+
+#fashion .menu__list li:hover,
+#fashion .menu__list li:focus {
+    background: linear-gradient(0deg, #3C2685 0%, rgba(255, 255, 255, 0) 60.16%);
+}
+
+.menu__dark .menu__list li:hover a,
+.menu__dark .menu__list li:focus a {
+    color: var(--main-light-color);
+}
+
+.hero__container-inner .title__label,
+.hero__container-inner .title,
+.hero__container-inner .base__text-secondary {
+    color: var(--main-light-color);
+}
+
+.hero__container-inner .main__btn {
+    color: #252525;
+    text-transform: uppercase;
+    background: var(--gradient-event-btn);
+}
+
+#event .hero__right-part img {
+    max-width: 582px;
+}
+
+#fashion .form-communication__wrap {
+    background: var(--gradient-fashion-mob);
+}
+
+#business .form-communication__wrap {
+    background: var(--gradient-business-mob);
+}
+
+@media screen and (min-width: 768px) {
+    #fashion .form-communication__wrap {
+        background: var(--gradient-fashion);
+    }
+
+    #business .form-communication__wrap {
+        background: var(--gradient-business);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #event .title__label {
+        color: var(--main--green-color);
+    }
+}

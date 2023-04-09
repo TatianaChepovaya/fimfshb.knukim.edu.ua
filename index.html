@@ -19,9 +19,18 @@
         <div class="header__wrap">
           <a class="logo" href=""> <img src="./images/logo-color.svg" alt="" /></a>
           <a class="menu__btn">
-            <span class="close"><img src="./images/burger.svg" alt="" />Меню</span>
-            <span class="open"><img src="./images/close.svg" alt="" /></span
-          ></a>
+            <span class="close"
+              ><svg>
+                <use href="./images/symbol-defs.svg#icon-burger"></use>
+              </svg>
+              Меню</span
+            >
+            <span class="open"
+              ><svg>
+                <use href="./images/symbol-defs.svg#icon-close"></use>
+              </svg>
+            </span>
+          </a>
         </div>
       </div>
       <div class="menu">
@@ -407,8 +416,11 @@
         </div>
       </section>
       <section class="partners">
-        <span class="title__label">Наші партнетри</span>
-        <h2 class="title">Партнери</h2>
+        <div class="container">
+          <span class="title__label">Наші партнетри</span>
+          <h2 class="title">Партнери</h2>
+        </div>
+
         <div class="partners__line">
           <img src="./images/M1_logo.png" alt="" />
           <img src="./images/inter.png" alt="" />
