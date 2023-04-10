@@ -47,7 +47,9 @@ $(document).ready(function () {
     slidesToScroll: 3,
     autoplay: false,
     autoplaySpeed: 2000,
-    arrows: false,
+    arrows: true,
+    nextArrow: $('.graduates__container li.next'),
+    prevArrow: $('.graduates__container li.prev'),
     responsive: [
       {
         breakpoint: 1024,
@@ -83,7 +85,9 @@ $(document).ready(function () {
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 2000,
-    arrows: false,
+    arrows: true,
+    nextArrow: $('.preview__container li.next'),
+    prevArrow: $('.preview__container li.prev'),
     responsive: [
       {
         breakpoint: 1330,
@@ -113,7 +117,9 @@ $(document).ready(function () {
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 2000,
-    arrows: false,
+    arrows: true,
+    nextArrow: $('.courses__container li.next'),
+    prevArrow: $('.courses__container li.prev'),
     responsive: [
       {
         breakpoint: 1330,
@@ -153,7 +159,9 @@ $(document).ready(function () {
     autoplay: false,
     autoplaySpeed: 2000,
     arrows: false,
-
+    arrows: true,
+    nextArrow: $('.news__container li.next'),
+    prevArrow: $('.news__container li.prev'),
     responsive: [
       {
         breakpoint: 1330,
@@ -172,14 +180,16 @@ $(document).ready(function () {
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 2000,
-    arrows: false,
-    dots: true,
+    arrows: true,
+    nextArrow: $('.direction__container li.next'),
+    prevArrow: $('.direction__container li.prev'),
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           slidesToScroll: 1,
           slidesToShow: 2,
+          dots: true,
         },
       },
       {
@@ -187,6 +197,63 @@ $(document).ready(function () {
         settings: {
           slidesToScroll: 1,
           slidesToShow: 1,
+          dots: true,
+        },
+      },
+    ],
+  })
+})
+$(document).ready(function () {
+  $('.specialties__slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    arrows: false,
+
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToScroll: 1,
+          slidesToShow: 2,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToScroll: 1,
+          slidesToShow: 1,
+          dots: true,
+        },
+      },
+    ],
+  })
+})
+$(document).ready(function () {
+  $('.trade__slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    arrows: false,
+
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToScroll: 1,
+          slidesToShow: 2,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToScroll: 1,
+          slidesToShow: 1,
+          dots: true,
         },
       },
     ],

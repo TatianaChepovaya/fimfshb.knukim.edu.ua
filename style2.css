@@ -21,6 +21,7 @@
     --gradient-business-line-two: linear-gradient(89.68deg, #42f1cd -1.71%, #f4ff2a 107.28%);
 }
 
+
 .header__container-inner .menu__btn span,
 .header__container-inner .menu__btn.active .open {
     background: var(--main-light-color);
@@ -37,12 +38,17 @@
 
 #event .menu__btn:hover .open,
 #event .menu__btn:hover .close {
-    background: linear-gradient(0deg, #E030E3 11.13%, rgba(255, 255, 255, 0) 135.5%);
+    background: var(--gradient-form);
 }
 
 #fashion .menu__btn:hover .open,
 #fashion .menu__btn:hover .close {
-    background: linear-gradient(0deg, #3C2685 0%, rgba(255, 255, 255, 0) 100.16%);
+    background: var(--gradient-fashion);
+}
+
+#business .menu__btn:hover .open,
+#business .menu__btn:hover .close {
+    background: var(--gradient-business);
 }
 
 .header__container-inner .menu__btn:hover .open svg,
@@ -61,7 +67,7 @@
 
 #fashion .menu.active,
 #fashion header.active {
-    background: #842086
+    background: #842086;
 }
 
 #business .menu.active,
@@ -96,8 +102,9 @@
     color: var(--main-light-color);
 }
 
-.hero__container-inner .title__label,
-.hero__container-inner .title,
+
+.title__label-white,
+.title__white,
 .hero__container-inner .base__text-secondary {
     color: var(--main-light-color);
 }
@@ -108,8 +115,41 @@
     background: var(--gradient-event-btn);
 }
 
+.hero__container-inner .main__btn:hover {
+    background: linear-gradient(16.06deg, #ffffff 21.07%, #19e7da 105.09%);
+}
+
+#fashion .hero__container-inner .main__btn {
+    color: #69116B;
+    background: var(--main-light-color);
+}
+
+#fashion .hero__container-inner .main__btn:hover {
+    background: linear-gradient(29.06deg, #ffffff 21.07%, #E737BE 90.09%);
+}
+
+#event .hero .main__btn::after {
+    background: #150810;
+}
+
+#fashion .hero .main__btn::after {
+    background: #8E40B2;
+}
+
+#business .hero .main__btn::after {
+    background: #31A590;
+}
+
 #event .hero__right-part img {
     max-width: 582px;
+}
+
+#fashion .hero__right-part img {
+    max-width: 645px;
+}
+
+#business .hero__right-part img {
+    max-width: 803px;
 }
 
 #fashion .form-communication__wrap {
@@ -117,7 +157,298 @@
 }
 
 #business .form-communication__wrap {
+
     background: var(--gradient-business-mob);
+}
+
+.specialties__container {
+    padding-bottom: 155px;
+}
+
+.specialties__container .title__wrap {
+    margin-bottom: 30px;
+}
+
+.specialties__item {
+    position: relative;
+    width: 304px;
+    height: 524px;
+    border-radius: 30px;
+}
+
+.specialties__item img {
+    width: 304px;
+    height: 524px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.specialties__slider .slick-slide > div {
+    width: 304px;
+    height: 524px;
+    margin: 0 auto;
+}
+
+.specialties__item .overlay__text {
+    text-align: start;
+    padding-bottom: 30px;
+}
+
+.specialties__item .overlay__text p {
+    font-weight: 500;
+    font-size: 25px;
+    color: var(--main-light-color);
+}
+
+.specialties__item .overlay__text span {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+}
+
+#fashion .overlay {
+    background: linear-gradient(355.56deg, #6C2ABF 26.16%, rgba(255, 255, 255, 0) 59.48%);
+}
+
+#business .slick-slide:nth-child(3n + 1) div .specialties__item .overlay {
+    background: linear-gradient(355.69deg, #F4FF2A 25.44%, rgba(255, 255, 255, 0) 57.84%);
+}
+
+#business .slick-slide:nth-child(3n + 2) div .specialties__item .overlay {
+    background: linear-gradient(355.56deg, #E737BE 26.16%, rgba(255, 255, 255, 0) 59.48%);
+}
+
+#business .slick-slide:nth-child(3n + 3) div .specialties__item .overlay {
+    background: linear-gradient(355.56deg, #42F1CD 26.16%, rgba(255, 255, 255, 0) 59.48%);
+}
+
+#business .overlay__text p,
+#business .overlay__text span {
+    color: #000000;
+}
+
+.profession__item {
+    width: 100%;
+    max-width: 1317px;
+    height: 597px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    margin-bottom: 31px;
+}
+
+#event .profession__item:first-child {
+    background-image: url(./images/dig-card.png);
+}
+
+#event .profession__item:nth-child(2) {
+    background-image: url(./images/dig-card2.png);
+}
+
+#event .profession__item:nth-child(3) {
+    background-image: url(./images/dig-card3.png);
+}
+
+#fashion .profession__item:first-child {
+    background-image: url(./images/dig-card-fahion.png);
+}
+
+#fashion .profession__item:nth-child(2) {
+    background-image: url(./images/dig-card-fahion2.png);
+}
+
+#fashion .profession__item:nth-child(3) {
+    background-image: url(./images/dig-card-fahion3.png);
+}
+
+#business .profession__item:first-child {
+    background-image: url(./images/dig-card-busines.png);
+}
+
+#business .profession__item:nth-child(2) {
+    background-image: url(./images/dig-card-busines2.png);
+}
+
+#business .profession__item:nth-child(3) {
+    background-image: url(./images/dig-card-busines3.png);
+}
+
+.profession__item-overlay {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    padding: 0 26px 47px 26px;
+}
+
+#business .profession__item:first-child .profession__item-overlay {
+    background: linear-gradient(0deg, #F4FF2A 4.84%, rgba(0, 0, 0, 0) 94%);
+}
+
+#business .profession__item:nth-child(2) .profession__item-overlay {
+    background: linear-gradient(0deg, #E737BE 18.49%, rgba(0, 0, 0, 0) 97.72%);
+}
+
+#business .profession__item:nth-child(3) .profession__item-overlay {
+    background: linear-gradient(0deg, #42F1CD 2.27%, rgba(0, 0, 0, 0) 96.88%);
+}
+
+.profession__item-text {
+    max-width: 400px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: end;
+
+}
+
+.profession__title {
+    font-weight: 500;
+    font-size: 25px;
+    color: var(--main-light-color);
+    margin-bottom: 20px;
+}
+
+.profession__item-text p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    color: var(--main-light-color);
+    margin-bottom: 35px;
+}
+
+#business .profession__item:first-child .profession__title,
+#business .profession__item:nth-child(3) .profession__title {
+    color: #000000;
+}
+
+#business .profession__item:first-child .profession__item-text p,
+#business .profession__item:nth-child(3) .profession__item-text p {
+    color: #000000;
+}
+
+.profession__item-text .main__btn {
+    color: #0F023A;
+}
+
+#event .profession__item-text .main__btn {
+    background: linear-gradient(180deg, #D6FFFA 0%, #53EEE4 100%);
+}
+
+#fashion .profession__item-text .main__btn {
+    background: #D6FFFA;
+}
+
+#business .profession__item-text .main__btn {
+    background: linear-gradient(216.06deg, #D6FFFA 21.07%, #19E7DA 105.09%);
+}
+
+.subjects__container {
+    padding-top: 57px;
+    padding-bottom: 110px;
+}
+
+.subjects__list {
+    list-style: disc;
+}
+
+.subjects__list li {
+    display: flex;
+    align-items: center;
+    width: 285px;
+    height: 64px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--main-light-color);
+    border-bottom: 1px solid #FFFFFF;
+    padding-left: 8px;
+    margin: 0 auto;
+}
+
+.subjects__list li::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--main-light-color);
+    margin-right: 10px;
+}
+
+.subjects__left-part .subjects__list:first-child li:first-child {
+    border-top: 1px solid #FFFFFF;
+}
+
+.trade__container {
+    padding-bottom: 119px;
+}
+
+.trade__container .arrow__btn-list {
+    justify-content: flex-end;
+    margin-bottom: 29px;
+}
+
+.trade__slider .slick-slide > div {
+
+    width: 307px;
+    height: 373px;
+    margin: 0 auto;
+}
+
+.trade__item {
+    display: flex !important;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    width: 307px;
+    height: 373px;
+    background: var(--gradient-main);
+    border-radius: 25px;
+    padding: 0 20px;
+}
+
+.trade__item p {
+    font-weight: 700;
+    font-size: 55px;
+    color: var(--main-light-color);
+    margin-bottom: 35px;
+}
+
+.trade__item span {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+    color: var(--main-light-color);
+    margin-bottom: 30px;
+}
+
+.trade__item .main__btn {
+    width: 222px;
+    height: 56px;
+    background: #F8F4FA;
+    color: #561086;
+}
+
+@media screen and (min-width: 500px) {
+    .hero__container-inner .hero__right-part img {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 575px) {
+    .subjects__wrap {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .subjects__list li {
+        width: 258px;
+    }
+
+    .subjects__right-part .subjects__list:first-child li:first-child {
+        border-top: 1px solid #FFFFFF;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -128,10 +459,189 @@
     #business .form-communication__wrap {
         background: var(--gradient-business);
     }
+
+    .profession__item {
+
+        height: 659px;
+        margin-bottom: 116px;
+    }
+
+    #business .profession__item:first-child .profession__item-overlay {
+        background: linear-gradient(90deg, #F4FF2A 28.73%,
+                rgba(0, 0, 0, 0) 91.13%);
+    }
+
+    #business .profession__item:nth-child(2) .profession__item-overlay {
+        background: linear-gradient(90deg, #E737BE 28.73%,
+                rgba(0, 0, 0, 0) 91.13%);
+    }
+
+    #business .profession__item:nth-child(3) .profession__item-overlay {
+        background: linear-gradient(90deg, #42F1CD 28.73%, rgba(0, 0, 0, 0) 91.13%);
+    }
+
+    .profession__item-overlay {
+        width: 75%;
+        padding-left: 60px;
+    }
+
+    .profession__item-text {
+
+        padding-bottom: 0;
+        align-content: center;
+    }
+
+    .profession__title {
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+
+    .profession__item-text p {
+
+        font-size: 16px;
+        line-height: 1.25;
+        color: var(--main-light-color);
+    }
+
+    #event .profession__item-text .main__btn {
+        background: linear-gradient(216.06deg, #D6FFFA 21.07%, #19E7DA 105.09%);
+    }
 }
 
 @media screen and (min-width: 1024px) {
     #event .title__label {
         color: var(--main--green-color);
+    }
+
+    #fashion .hero .main__btn::after {
+        background: #69116B;
+    }
+
+    #event .hero__container {
+        padding-top: 62px;
+        padding-bottom: 155px;
+    }
+
+    #fashion .hero__container {
+        padding-top: 64px;
+        padding-bottom: 121px;
+    }
+
+    #business .hero__container {
+        padding-top: 82px;
+        padding-bottom: 192px;
+    }
+
+    .hero__container-inner .hero__right-part img {
+        width: 45%;
+        right: 140px;
+    }
+
+    .specialties__container {
+        padding-bottom: 100px;
+    }
+
+    .specialties__container .title__wrap {
+        margin-bottom: 80px;
+    }
+
+    .profession__item-overlay {
+        padding-left: 132px;
+    }
+
+    .specialties__item .overlay__text {
+        padding-right: 48px;
+        padding-left: 48px;
+        padding-bottom: 60px;
+    }
+
+    .specialties__item .overlay__text p {
+        font-size: 38px;
+        line-height: 1.31;
+        margin-bottom: 25px;
+    }
+
+    .specialties__item .overlay__text span {
+        font-size: 16px;
+        line-height: 1.25;
+    }
+
+    .subjects__container {
+        padding-top: 98px;
+        padding-bottom: 200px;
+    }
+
+    .subjects__list li:first-child {
+        border-top: 1px solid #FFFFFF;
+    }
+
+    .subjects__wrap {
+        justify-content: space-between;
+    }
+
+    .subjects__left-part,
+    .subjects__right-part {
+        width: 46%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .subjects__list {
+        width: 258px;
+        zoom: 0.8;
+    }
+
+    .trade__container {
+        padding-bottom: 210px;
+    }
+
+}
+
+@media screen and (min-width: 1166px) {
+    .hero__container-inner .hero__right-part img {
+        width: 40%;
+    }
+
+    #business .hero__container-inner .hero__right-part img {
+        width: 50%;
+        right: 80px;
+    }
+
+    .subjects__list {
+
+        zoom: 1;
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    .trade__slider .slick-slide > div {
+        width: 391px;
+        height: 430px;
+        margin: 0 auto;
+    }
+
+    .trade__item {
+        width: 391px;
+        height: 430px;
+        background: var(--gradient-main);
+        border-radius: 25px;
+    }
+}
+
+@media screen and (min-width: 1330px) {
+    .specialties__item {
+        width: 421px;
+        height: 730px;
+    }
+
+    .specialties__item img {
+        width: 421px;
+        height: 730px;
+
+    }
+
+    .specialties__slider .slick-slide > div {
+        width: 421px;
+        height: 730px;
     }
 }
