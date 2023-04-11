@@ -14,7 +14,7 @@
     <script src="./menu-mob.js"></script>
     <script src="./index.js"></script>
   </head>
-  <body id="business" style="background-image: url(./images/business111111.png); background-size: cover">
+  <body id="business" style="background-image: url(./images/business_bg_2.png); background-size: cover">
     <header>
       <div class="container header__container header__container-inner">
         <div class="header__wrap">
@@ -157,7 +157,7 @@
                   <input type="text" placeholder="Email" />
                 </label>
                 <textarea name="" id="" rows="5" placeholder="Повідомлення*"></textarea>
-                <div class="form__btn"><a class="main__btn btn__white" type="submit">Відправити</a></div>
+                <div class="btn-inner"><a class="main__btn btn__white" type="submit">Відправити</a></div>
               </form>
             </div>
             <!-- <div class="form-communication__overlay">
@@ -185,22 +185,22 @@
                 кафедри
               </h2>
             </div>
-         <ul class="arrow__btn-list">
-            <li class="prev">
-              <a class="arrow__btn">
-                <svg width="18" height="18">
-                  <use href="./images/symbol-defs.svg#icon-arrow-left"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="next">
-              <a class="arrow__btn">
-                <svg width="18" height="18">
-                  <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+            <ul class="arrow__btn-list">
+              <li class="prev">
+                <a class="arrow__btn">
+                  <svg width="18" height="18">
+                    <use href="./images/symbol-defs.svg#icon-arrow-left"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="next">
+                <a class="arrow__btn">
+                  <svg width="18" height="18">
+                    <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
           <div class="specialties__slider">
             <div class="specialties__item">
@@ -284,7 +284,9 @@
                       Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply
                       dummy text of the printing and typesetting industry.
                     </p>
-                    <a class="main__btn" href="">Подати заявку</a>
+                    <div class="btn-inner">
+                      <a class="main__btn" href="">Подати заявку</a>
+                    </div>
                   </div>
                 </div>
               </a>
@@ -298,7 +300,9 @@
                       Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply
                       dummy text of the printing and typesetting industry.
                     </p>
-                    <a class="main__btn" href="">Подати заявку</a>
+                    <div class="btn-inner">
+                      <a class="main__btn" href="">Подати заявку</a>
+                    </div>
                   </div>
                 </div>
               </a>
@@ -312,7 +316,9 @@
                       Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply
                       dummy text of the printing and typesetting industry.
                     </p>
-                    <a class="main__btn" href="">Подати заявку</a>
+                    <div class="btn-inner">
+                      <a class="main__btn" href="">Подати заявку</a>
+                    </div>
                   </div>
                 </div>
               </a>
@@ -369,58 +375,75 @@
       </section>
       <section>
         <div class="container trade__container">
-          <ul class="arrow__btn-list">
-            <li class="prev">
-              <a class="arrow__btn">
-                <svg width="18" height="18">
-                  <use href="./images/symbol-defs.svg#icon-arrow-left"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="next">
-              <a class="arrow__btn">
-                <svg width="18" height="18">
-                  <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <div class="trade__slider">
+          <div class="trade__wrap">
             <div class="trade__item">
               <p>028</p>
-              <span>менеджмент соціокультурної діяльності</span>
-              <a class="main__btn" href="">Стати студентом</a>
+              <span
+                >менеджмент <br />
+                соціокультурної <br />
+                діяльності</span
+              >
+              <div class="btn-inner">
+                <a class="main__btn" href="">Стати студентом</a>
+              </div>
             </div>
             <div class="trade__item">
               <p>026</p>
-              <span>Сценічне мистецтво</span>
-              <a class="main__btn" href="">Стати студентом</a>
-            </div>
-            <div class="trade__item">
-              <p>021</p>
-              <span>менеджмент соціокультурної діяльності</span>
-              <a class="main__btn" href="">Стати студентом</a>
+              <span
+                >Сценічне <br />
+                мистецтво</span
+              >
+              <div class="btn-inner">
+                <a class="main__btn" href="">Стати студентом</a>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="partners">
-        <div class="container">
-          <span class="title__label title__label-white">Наші партнетри</span>
-          <h2 class="title title__white">Партнери</h2>
-        </div>
-        <div class="partners__line">
-          <img src="./images/M1_logo.png" alt="" />
-          <img src="./images/inter.png" alt="" />
-          <img src="./images/24.png" alt="" />
-          <img src="./images/e-film.png" alt="" />
-          <img src="./images/tet.png" alt="" />
-          <img src="./images/star-.png" alt="" />
-          <img src="./images/mtv_logos.png" alt="" />
-          <img src="./images/M2.svg" alt="" />
+      <section class="conditions">
+        <div class="container conditions__container">
+          <span class="title__label title__label-white">Що потрібно?</span>
+          <h2 class="title title__white">Умови вступу</h2>
+          <ul class="conditions__list">
+            <li class="conditions__item">
+              <p>
+                Режисер <br />
+                фешн шоу
+              </p>
+              <span></span>
+              <ul>
+                <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+              </ul>
+              <a class="main__btn" href="">Стати студентом</a>
+            </li>
+            <li class="conditions__item">
+              <p>Менеджер</p>
+              <span></span>
+              <ul>
+                <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+              </ul>
+              <a class="main__btn" href="">Стати студентом</a>
+            </li>
+            <li class="conditions__item">
+              <p>Продюсер</p>
+              <span></span>
+              <ul>
+                <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+              </ul>
+              <a class="main__btn" href="">Стати студентом</a>
+            </li>
+          </ul>
         </div>
       </section>
-
       <section class="courses">
         <div class="container courses__container">
           <div class="title__wrap">
@@ -446,7 +469,7 @@
             </ul>
           </div>
 
-          <div class="courses__wrap">
+          <div class="courses__wrap courses__inner">
             <div class="courses__left-part">
               <ul class="courses__left-part-list">
                 <li><a>Івент-менеджмент</a></li>
@@ -454,7 +477,9 @@
                 <li><a>Продюсер</a></li>
                 <li><a>Дизайнер зачісок</a></li>
               </ul>
-              <a class="main__btn btn__color" href="">Більше курсів</a>
+              <a class="main__btn {
+                
+              }" href="">Більше курсів</a>
             </div>
             <div class="courses__right-part">
               <div class="courses__slider">
@@ -507,7 +532,22 @@
           </div>
         </div>
       </section>
-
+      <section class="partners">
+        <div class="container">
+          <span class="title__label title__label-white">Наші партнетри</span>
+          <h2 class="title title__white">Партнери</h2>
+        </div>
+        <div class="partners__line">
+          <img src="./images/M1_logo.png" alt="" />
+          <img src="./images/inter.png" alt="" />
+          <img src="./images/24.png" alt="" />
+          <img src="./images/e-film.png" alt="" />
+          <img src="./images/tet.png" alt="" />
+          <img src="./images/star-.png" alt="" />
+          <img src="./images/mtv_logos.png" alt="" />
+          <img src="./images/M2.svg" alt="" />
+        </div>
+      </section>
       <section>
         <div class="container direction__container">
           <div class="title__wrap">
@@ -515,22 +555,22 @@
               <span class="title__label title__label-white">Керівницство факультету</span>
               <h2 class="title title__white">Керівницство</h2>
             </div>
-        <ul class="arrow__btn-list">
-            <li class="prev">
-              <a class="arrow__btn">
-                <svg width="18" height="18">
-                  <use href="./images/symbol-defs.svg#icon-arrow-left"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="next">
-              <a class="arrow__btn">
-                <svg width="18" height="18">
-                  <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+            <ul class="arrow__btn-list">
+              <li class="prev">
+                <a class="arrow__btn">
+                  <svg width="18" height="18">
+                    <use href="./images/symbol-defs.svg#icon-arrow-left"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="next">
+                <a class="arrow__btn">
+                  <svg width="18" height="18">
+                    <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
           <div class="direction__slider">
             <div class="graduates__item">

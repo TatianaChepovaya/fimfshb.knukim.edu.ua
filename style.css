@@ -1,4 +1,4 @@
-@font-face {
+@rmnt-face {
   font-family: e-Ukraine;
   src: url(./fonts/e-Ukraine-Light/e-Ukraine-Light.eot);
   src: url(./fonts/e-Ukraine-Light/e-Ukraine-Light.eot?#iefix) format('embedded-opentype'),
@@ -1128,7 +1128,7 @@ header.active {
   color: var(--main-light-color);
 }
 
-.form__btn {
+.btn-inner {
   position: relative;
   z-index: 10;
 }

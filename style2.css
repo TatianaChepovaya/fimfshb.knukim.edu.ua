@@ -281,6 +281,15 @@
     padding: 0 26px 47px 26px;
 }
 
+#event .profession__item .profession__item-overlay {
+    background: linear-gradient(0deg, #100436 4.84%, rgba(0, 0, 0, 0) 94%);
+}
+
+#fashion .profession__item .profession__item-overlay {
+    background: linear-gradient(0deg, #231433 4.84%, rgba(0, 0, 0, 0) 94%);
+}
+
+
 #business .profession__item:first-child .profession__item-overlay {
     background: linear-gradient(0deg, #F4FF2A 4.84%, rgba(0, 0, 0, 0) 94%);
 }
@@ -402,9 +411,33 @@
     justify-content: center;
     width: 307px;
     height: 373px;
-    background: var(--gradient-main);
     border-radius: 25px;
     padding: 0 20px;
+}
+
+#event .trade__item {
+    background: linear-gradient(90deg, #23C1CB 0%, #50067E 100%);
+
+}
+
+#fashion .trade__item {
+    background: linear-gradient(90deg, #5423A0 0%, #BB57BF 100%);
+}
+
+#business .trade__item {
+    width: 100%;
+    max-width: 610px;
+    height: 373px;
+
+}
+
+#business .trade__item:first-child {
+    background: linear-gradient(90deg, #B9963C 0%, #C9C32C 100%);
+    margin-bottom: 35px;
+}
+
+#business .trade__item:nth-child(2) {
+    background: linear-gradient(90deg, #893CB9 0%, #C92C8A 100%);
 }
 
 .trade__item p {
@@ -417,6 +450,7 @@
 .trade__item span {
     display: block;
     text-align: center;
+    width: 100%;
     font-weight: 700;
     font-size: 25px;
     color: var(--main-light-color);
@@ -428,6 +462,143 @@
     height: 56px;
     background: #F8F4FA;
     color: #561086;
+}
+
+#business .trade__item:first-child .main__btn::after {
+    background: #978213;
+}
+
+#business .trade__item:nth-child(2) .main__btn::after {
+    background: #6E1D87;
+}
+
+.conditions__container {
+    padding-bottom: 67px;
+}
+
+.conditions__container .title {
+    margin-bottom: 36px;
+}
+
+.conditions__item {
+    width: 313px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(100px);
+    border: 2px solid var(--main-light-color);
+    border-radius: 30px;
+    padding-top: 50px;
+    padding-bottom: 66px;
+    margin-bottom: 31px;
+}
+
+.conditions__item:last-child {
+    margin-bottom: 0;
+}
+
+.conditions__item p {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.16;
+    color: var(--main-light-color);
+    text-align: center;
+}
+
+.conditions__item span {
+    display: block;
+    width: 175px;
+    height: 1px;
+    margin: 45px auto;
+    background-color: var(--main-light-color);
+}
+
+.conditions__item ul {
+    list-style: disc;
+    padding: 0 38px 0 58px;
+    margin-bottom: 45px;
+}
+
+.conditions__item li {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.53;
+    color: var(--main-light-color);
+}
+
+.conditions__item li:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.conditions__item .main__btn {
+    width: 215px;
+    height: 56px;
+    color: #561086;
+    background: #F8F4FA;
+    margin: 0 auto;
+}
+
+.conditions__item .main__btn::after {
+    width: 179px;
+    height: 27px;
+    background-color: #541E72;
+}
+
+
+#business .conditions__item:first-child {
+    border-color: rgba(244, 255, 42, 0.05);
+    background: rgba(244, 255, 42, 0.25);
+
+}
+
+#business .conditions__item:nth-child(2) {
+    border-color: rgba(66, 241, 205, 0.05);
+    background: rgba(66, 241, 205, 0.25);
+}
+
+#business .conditions__item:nth-child(3) {
+    border-color: rgba(231, 55, 190, 0.05);
+    background: rgba(231, 55, 190, 0.25);
+}
+
+#business .conditions__item .main__btn::after {
+
+    background-color: #978213;
+}
+
+#business .title__label {
+    color: var(--main--green-color);
+}
+
+.courses__inner .courses__left-part-list li {
+    border-color: var(--main-light-color);
+    color: var(--main-light-color);
+}
+
+.courses__inner .courses__left-part .main__btn {
+    color: var(--main-violet-color);
+    background-color: var(--main-light-color);
+}
+
+#fashion .courses__inner .courses__left-part-list li:hover {
+    background: linear-gradient(358.9deg, #2ABFBF 0.94%, #AA2ABF 0.95%, rgba(255, 255, 255, 0) 99.06%);
+}
+
+.courses__inner .courses__title {
+    color: var(--main-light-color);
+}
+
+#fashion .courses__inner .base__text-small,
+#business .courses__inner .base__text-small,
+.courses__inner .btn__registration {
+    color: var(--main-light-color);
+}
+
+#fashion .courses__inner .btn__play {
+    background: var(--gradient-fashion);
+}
+
+#business .courses__inner .btn__play {
+    background: linear-gradient(90deg, #3C8CB9 0%, #2CC8C9 100%);
 }
 
 @media screen and (min-width: 500px) {
@@ -451,6 +622,12 @@
     }
 }
 
+@media screen and (min-width: 650px) {
+    #business .trade__item {
+        margin: 0 auto;
+    }
+}
+
 @media screen and (min-width: 768px) {
     #fashion .form-communication__wrap {
         background: var(--gradient-fashion);
@@ -461,9 +638,16 @@
     }
 
     .profession__item {
-
         height: 659px;
         margin-bottom: 116px;
+    }
+
+    #event .profession__item .profession__item-overlay {
+        background: linear-gradient(90deg, #0E0234 28.73%, rgba(0, 0, 0, 0) 91.13%);
+    }
+
+    #fashion .profession__item .profession__item-overlay {
+        background: linear-gradient(90deg, #231432 28.73%, rgba(0, 0, 0, 0) 91.13%);
     }
 
     #business .profession__item:first-child .profession__item-overlay {
@@ -506,9 +690,38 @@
     #event .profession__item-text .main__btn {
         background: linear-gradient(216.06deg, #D6FFFA 21.07%, #19E7DA 105.09%);
     }
+
+    #business .trade__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #business .trade__item:first-child {
+        margin-right: 20px;
+    }
+
+    .conditions__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        zoom: 0.8;
+    }
+
+    .conditions__item {
+        width: 389px;
+    }
 }
 
+@media screen and (min-width: 974px) {
+    .conditions__list {
+        zoom: 0.84;
+    }
+}
+
+
 @media screen and (min-width: 1024px) {
+
     #event .title__label {
         color: var(--main--green-color);
     }
@@ -595,6 +808,51 @@
         padding-bottom: 210px;
     }
 
+    #event .trade__item {
+        background: var(--gradient-main);
+    }
+
+    #fashion .trade__item {
+        background: var(--gradient-fashion);
+    }
+
+    #business .trade__item {
+        height: 501px;
+        zoom: 0.75;
+        margin: 0;
+    }
+
+    .conditions__container {
+        padding-bottom: 216px;
+    }
+
+    .conditions__container .title {
+        margin-bottom: 58px;
+    }
+
+    .conditions__item {
+        margin-bottom: 0;
+        padding-bottom: 70px;
+    }
+
+    .conditions__item span {
+        width: 258px;
+    }
+
+    #event .conditions__item li {
+        color: #9E9C9C;
+    }
+
+    .conditions__item .main__btn::after {
+        background-color: #370E7A;
+        width: 206px;
+        height: 30px;
+    }
+
+    #business .conditions__item .main__btn::after {
+
+        background-color: #31A590;
+    }
 }
 
 @media screen and (min-width: 1166px) {
@@ -608,8 +866,15 @@
     }
 
     .subjects__list {
-
         zoom: 1;
+    }
+
+    #business .trade__item {
+        zoom: 0.85;
+    }
+
+    .conditions__list {
+        zoom: 0.9;
     }
 }
 
@@ -625,6 +890,16 @@
         height: 430px;
         background: var(--gradient-main);
         border-radius: 25px;
+    }
+}
+
+@media screen and (min-width: 1270px) {
+    #business .trade__item {
+        zoom: 1;
+    }
+
+    .conditions__list {
+        zoom: 1;
     }
 }
 

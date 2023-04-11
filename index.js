@@ -209,7 +209,9 @@ $(document).ready(function () {
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 2000,
-    arrows: false,
+    arrows: true,
+    nextArrow: $('.specialties__container li.next'),
+    prevArrow: $('.specialties__container li.prev'),
 
     responsive: [
       {
@@ -237,8 +239,9 @@ $(document).ready(function () {
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 2000,
-    arrows: false,
-
+    arrows: true,
+    nextArrow: $('.trade__container li.next'),
+    prevArrow: $('.trade__container li.prev'),
     responsive: [
       {
         breakpoint: 1024,
