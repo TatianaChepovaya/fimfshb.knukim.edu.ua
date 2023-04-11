@@ -712,6 +712,7 @@ header.active {
   text-align: center;
   padding-right: 30px;
   padding-left: 30px;
+  padding-bottom: 22px;
 }
 
 .overlay__text p {
@@ -839,7 +840,8 @@ header.active {
 .menu__list li:hover,
 .menu__list li:focus,
 .courses__left-part-list li:hover,
-.courses__left-part-list li:focus {
+.courses__left-part-list li:focus,
+.courses__left-part-list li.active {
   background: linear-gradient(358.9deg, #2ABFBF 0.94%, rgba(255, 255, 255, 0) 99.06%);
 }
 
@@ -1386,7 +1388,11 @@ header.active {
   .title__wrap {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
+  }
+
+  .title {
+    margin-bottom: 0;
   }
 
   .preview__container .title__wrap {
