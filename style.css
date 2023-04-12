@@ -117,6 +117,7 @@ ul {
 html,
 body {
   overflow-x: hidden;
+  position: relative;
 }
 
 body {
@@ -128,6 +129,10 @@ body {
 
 body.active {
   position: fixed;
+}
+
+main {
+  position: relative;
 }
 
 a {
@@ -356,6 +361,8 @@ header.active {
   fill: var(--main-violet-color);
 }
 
+
+
 .hero__left-part .title__label {
 
   margin-bottom: 15px;
@@ -573,6 +580,7 @@ header.active {
 }
 
 .department__container {
+  position: relative;
   padding-bottom: 74px;
 }
 
@@ -1890,6 +1898,10 @@ header.active {
 
   .form-communication__wrap {
     zoom: 1;
+  }
+
+  .hero__bg {
+    zoom: 0.9;
   }
 }
 
