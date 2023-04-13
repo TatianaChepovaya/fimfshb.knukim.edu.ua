@@ -770,6 +770,10 @@ header.active {
   padding-bottom: 80px;
 }
 
+.partners .title {
+  margin-bottom: 15px;
+}
+
 .partners__line {
   display: flex;
   height: 55px;
@@ -1367,6 +1371,10 @@ header.active {
 
   .partners {
     padding-bottom: 180px;
+  }
+
+  .partners .title {
+    margin-bottom: 60px;
   }
 
   .partners__line {

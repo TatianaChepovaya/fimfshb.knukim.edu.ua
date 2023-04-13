@@ -982,6 +982,7 @@ header {
 }
 
 .event__bg-1,
+.fashion__bg-1,
 .event__bg-2 {
     position: absolute;
     max-width: 960px;
@@ -989,7 +990,8 @@ header {
     z-index: -1;
 }
 
-.event__bg-1 {
+.event__bg-1,
+.fashion__bg-1 {
     transform: rotate(24.49deg);
     top: -250px;
     left: -500px;
@@ -1023,7 +1025,59 @@ header {
 }
 
 .event__bg-5,
-.event__bg-6 {
+.event__bg-6,
+.event__bg-7 {
+    display: none;
+}
+
+.ticker__section-inner {
+    display: none;
+}
+
+.event__line-1 {
+    position: absolute;
+    width: 294px;
+    height: 343px;
+    top: -10px;
+    right: -135px;
+    z-index: -3;
+}
+
+.event__line-2 {
+    position: absolute;
+    width: 429px;
+    height: 382px;
+    top: 175px;
+    right: -137px;
+    z-index: -3;
+    transform: rotate(59.42deg);
+}
+
+.trade__container {
+    position: relative;
+}
+
+.event__line-3,
+.event__line-4 {
+    position: absolute;
+    width: 316px;
+    height: 282px;
+    z-index: -3;
+    transform: rotate(69.78deg);
+}
+
+.event__line-3 {
+    top: 155px;
+    right: -130px;
+}
+
+.event__line-4 {
+    top: -110px;
+    right: -100px;
+}
+
+.event__line-5,
+.event__line-6 {
     display: none;
 }
 
@@ -1308,6 +1362,21 @@ header {
         display: none;
     }
 
+    .event__line-1 {
+        width: 908px;
+        height: 809px;
+        top: -230px;
+        right: 200px;
+        zoom: 0.6;
+    }
+
+    .event__line-2 {
+        width: 908px;
+        height: 809px;
+        top: 382px;
+        right: -137px;
+        transform: rotate(84.14deg);
+    }
 }
 
 @media screen and (min-width: 850px) {
@@ -1615,6 +1684,69 @@ header {
         transform: rotate(-15.91deg);
         z-index: -1;
     }
+
+    .video__aboutus-container {
+        position: relative;
+        padding-top: 115px;
+    }
+
+    .event__bg-7 {
+        display: block;
+        position: absolute;
+        max-width: 1400px;
+        height: auto;
+        top: -400px;
+        right: -500px;
+        transform: rotate(-15.91deg);
+        z-index: -1;
+
+    }
+
+    #event .direction__container,
+    #fashion .direction__container,
+    #bussiness .direction__container {
+        padding-bottom: 130px;
+    }
+
+    .ticker__section-inner {
+        display: block;
+    }
+
+    .event__line-3 {
+
+        width: 908px;
+        height: 809px;
+        top: -290px;
+        left: -707px;
+
+        transform: rotate(69.78deg);
+    }
+
+    .event__line-5 {
+        display: block;
+        position: absolute;
+        z-index: -3;
+        width: 908px;
+        height: 809px;
+        bottom: 50px;
+        left: -850px;
+        transform: rotate(-167.43deg);
+    }
+
+    .event__line-6 {
+        display: block;
+        position: absolute;
+        z-index: -3;
+        width: 908px;
+        height: 809px;
+        bottom: -212px;
+        right: -830px;
+        transform: rotate(-46.54deg);
+    }
+
+    .reviews__container {
+        position: relative;
+    }
 }
 
 @media screen and (min-width: 1166px) {
@@ -1698,7 +1830,14 @@ header {
         height: 730px;
     }
 
+    .event__line-1 {
+        zoom: 1;
+    }
 
+    .event__line-2 {
+        top: 758px;
+        right: -410px;
+    }
 }
 
 
