@@ -933,7 +933,6 @@ header {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: -1;
 }
 
 #event .business__bg-header,
@@ -941,41 +940,53 @@ header {
 #fashion .business__bg-header,
 #fashion .event__bg-header,
 #business .fashion__bg-header,
-#business .event__bg-header {
+#business .event__bg-header,
+#event .business__line-1,
+#event .fashion__line-1,
+#fashion .business__line-1,
+#fashion .event__line-1,
+#business .fashion__line-1,
+#business .event__line-1 {
     display: none;
 }
 
 .event__bg-header img:first-child {
     width: 235px;
     height: 282px;
+    z-index: 1;
 }
 
 .event__bg-header img:last-child {
     display: none;
     width: 964px;
     height: 945px;
+    z-index: 1;
 }
 
 .fashion__bg-header img:first-child {
     width: 299px;
     height: 351px;
+    z-index: 1;
 }
 
 .fashion__bg-header img:last-child {
     display: none;
     width: 1084px;
     height: 1039px;
+    z-index: 1;
 }
 
 .business__bg-header img:first-child {
     width: 188px;
     height: 255px;
+    z-index: 1;
 }
 
 .business__bg-header img:last-child {
     display: none;
     width: 964px;
     height: 945px;
+    z-index: 1;
 }
 
 .event__hero-bg {
@@ -1041,7 +1052,7 @@ header {
     height: 343px;
     top: -10px;
     right: -135px;
-    z-index: -3;
+
 }
 
 .event__line-2 {
@@ -1088,7 +1099,7 @@ header {
     height: 302px;
     top: 0;
     right: -150px;
-    z-index: -3;
+
     transform: rotate(20.85deg);
 }
 
