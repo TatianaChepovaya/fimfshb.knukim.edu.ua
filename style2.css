@@ -858,6 +858,7 @@ footer .ball {
     height: 188px;
     filter: blur(20px);
     transform: matrix(0.87, -0.5, 0.5, 0.87, 0, 0);
+    z-index: -1;
 }
 
 .bg-1 {
@@ -974,6 +975,56 @@ header {
     display: none;
     width: 964px;
     height: 945px;
+}
+
+.event__hero-bg {
+    display: none;
+}
+
+.event__bg-1,
+.event__bg-2 {
+    position: absolute;
+    max-width: 960px;
+    height: 1451px;
+    z-index: -1;
+}
+
+.event__bg-1 {
+    transform: rotate(24.49deg);
+    top: -250px;
+    left: -500px;
+
+}
+
+.specialties__container {
+    position: relative;
+}
+
+.event__bg-2 {
+    max-width: 1400px;
+    height: auto;
+    top: 200px;
+    right: -500px;
+    transform: rotate(-169.82deg);
+}
+
+.profession__container {
+    position: relative;
+}
+
+.event__bg-3 {
+    position: absolute;
+    max-width: 1400px;
+    height: auto;
+    bottom: -600px;
+    right: -400px;
+    transform: rotate(24.49deg);
+    z-index: -1;
+}
+
+.event__bg-5,
+.event__bg-6 {
+    display: none;
 }
 
 @media screen and (min-width: 425px) {
@@ -1211,7 +1262,7 @@ header {
         width: 634px;
         height: 607px;
         right: -120px;
-        bottom: -430px;
+        bottom: -470px;
 
     }
 
@@ -1509,6 +1560,60 @@ header {
     .business__bg-header img:last-child {
 
         zoom: 0.8;
+    }
+
+    .event__hero-bg {
+        display: block;
+        position: absolute;
+        width: 1125px;
+        height: 1364px;
+        bottom: -550px;
+        right: -150px;
+    }
+
+    .event__bg-2 {
+        top: -110px;
+        left: -200px;
+        transform: rotate(-108.39deg);
+    }
+
+    .event__bg-3 {
+        bottom: -1000px;
+        right: -700px;
+        transform: rotate(-36.2deg);
+    }
+
+    .event__bg-4 {
+        display: block;
+        position: absolute;
+        max-width: 1400px;
+        height: auto;
+        bottom: -1300px;
+        left: -800px;
+        transform: rotate(-15.91deg);
+        z-index: -1;
+    }
+
+    .event__bg-5 {
+        display: block;
+        position: absolute;
+        max-width: 1400px;
+        height: auto;
+        top: 6800px;
+        left: -800px;
+        transform: rotate(-15.91deg);
+        z-index: -1;
+    }
+
+    .event__bg-6 {
+        display: block;
+        position: absolute;
+        max-width: 1400px;
+        height: auto;
+        bottom: 500px;
+        left: -800px;
+        transform: rotate(-15.91deg);
+        z-index: -1;
     }
 }
 
