@@ -175,6 +175,7 @@
 }
 
 .specialties__container {
+    position: relative;
     padding-bottom: 155px;
 }
 
@@ -1081,6 +1082,88 @@ header {
     display: none;
 }
 
+.fashion__line-1 {
+    position: absolute;
+    width: 294px;
+    height: 302px;
+    top: 0;
+    right: -150px;
+    z-index: -3;
+    transform: rotate(20.85deg);
+}
+
+.fashion__line-2 {
+    position: absolute;
+    width: 429px;
+    height: 382px;
+    bottom: 200px;
+    right: -150px;
+    z-index: -3;
+    transform: rotate(29deg);
+}
+
+.fashion__line-3 {
+    position: absolute;
+    width: 429px;
+    height: 382px;
+    bottom: 51px;
+    right: -150px;
+    z-index: -3;
+    transform: rotate(64deg);
+
+}
+
+.conditions__container {
+    position: relative;
+}
+
+.fashion__line-4 {
+    position: absolute;
+    width: 294px;
+    height: 302px;
+    bottom: -80px;
+    left: -150px;
+    z-index: -3;
+    transform: rotate(142.82deg);
+
+}
+
+.fashion__line-5 {
+    display: none;
+}
+
+.fashion__bg-2 {
+    position: absolute;
+    max-width: 960px;
+    height: auto;
+    bottom: -173px;
+    left: -168px;
+
+    z-index: -1;
+}
+
+.profession__container {
+    position: relative;
+}
+
+.fashion__bg-3 {
+    position: absolute;
+    max-width: 1400px;
+    height: auto;
+    bottom: 0;
+    right: -500px;
+
+    z-index: -1;
+}
+
+.fashion__bg-4,
+.fashion__bg-5,
+.fashion__bg-6,
+.fashion__bg-7,
+.fashion__bg-8 {
+    display: none;
+}
+
 @media screen and (min-width: 425px) {
     .business__video {
         height: 220px;
@@ -1376,6 +1459,30 @@ header {
         top: 382px;
         right: -137px;
         transform: rotate(84.14deg);
+    }
+
+    .fashion__line-1 {
+
+        width: 806px;
+        height: 828px;
+        top: -150px;
+        right: 0;
+        zoom: 0.6;
+    }
+
+    .fashion__line-4 {
+        display: none;
+
+    }
+
+    .fashion__bg-2 {
+
+        max-width: 1400px;
+        height: auto;
+        bottom: -600px;
+        left: -538px;
+        transform: rotate(24.49deg);
+
     }
 }
 
@@ -1747,6 +1854,106 @@ header {
     .reviews__container {
         position: relative;
     }
+
+    .fashion__line-1 {
+        zoom: 0.8;
+    }
+
+    .fashion__line-2 {
+        width: 806px;
+        height: 828px;
+        bottom: -150px;
+        left: -850px;
+        transform: rotate(20.85deg);
+    }
+
+    .fashion__line-3 {
+
+        width: 806px;
+        height: 828px;
+        bottom: -328px;
+        right: -450px;
+        transform: rotate(20.85deg);
+    }
+
+    .video__aboutus-container {
+        position: relative;
+    }
+
+    .fashion__line-5 {
+        display: block;
+        position: absolute;
+        width: 806px;
+        height: 828px;
+        z-index: -3;
+        bottom: 70px;
+        left: -400px;
+        transform: rotate(142.82deg);
+    }
+
+    .fashion__bg-3 {
+
+        max-width: 1400px;
+        height: auto;
+        top: -420px;
+        right: -500px;
+
+    }
+
+    .fashion__bg-4 {
+        display: block;
+        position: absolute;
+        max-width: 1400px;
+        height: auto;
+        bottom: -420px;
+        left: -500px;
+        transform: rotate(-133.43deg);
+        z-index: -1;
+    }
+
+    .fashion__bg-5 {
+        display: block;
+        position: absolute;
+        max-width: 1400px;
+        height: auto;
+        bottom: -250px;
+        left: -600px;
+        transform: rotate(68.82deg);
+        z-index: -1;
+    }
+
+    .fashion__bg-6 {
+        display: block;
+        position: absolute;
+        max-width: 1400px;
+        height: auto;
+        bottom: -450px;
+        right: -600px;
+        transform: rotate(243deg);
+        z-index: -1;
+    }
+
+    .fashion__bg-7 {
+        display: block;
+        position: absolute;
+        max-width: 1400px;
+        height: auto;
+        bottom: -600px;
+        right: -600px;
+        transform: rotate(243deg);
+        z-index: -1;
+    }
+
+    .fashion__bg-8 {
+        display: block;
+        position: absolute;
+        max-width: 1400px;
+        height: auto;
+        bottom: 500px;
+        left: -600px;
+        transform: rotate(300deg);
+        z-index: -1;
+    }
 }
 
 @media screen and (min-width: 1166px) {
@@ -1830,7 +2037,8 @@ header {
         height: 730px;
     }
 
-    .event__line-1 {
+    .event__line-1,
+    .fashion__line-1 {
         zoom: 1;
     }
 
