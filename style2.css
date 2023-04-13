@@ -1182,9 +1182,13 @@ footer .ball {
     }
 
     .bg-7 {
-
         bottom: -300px;
+    }
 
+    #event .form__ball-right,
+    #fashion .form__ball-right,
+    #business .form__ball-right {
+        filter: blur(10px);
     }
 }
 
