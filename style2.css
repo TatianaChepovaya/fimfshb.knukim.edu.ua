@@ -442,12 +442,7 @@
     background: linear-gradient(90deg, #5423A0 0%, #BB57BF 100%);
 }
 
-#business .trade__item {
-    width: 100%;
-    max-width: 610px;
-    height: 373px;
 
-}
 
 #business .trade__item:first-child {
     background: linear-gradient(90deg, #B9963C 0%, #C9C32C 100%);
@@ -929,11 +924,7 @@ header {
     position: relative;
 }
 
-.header__bg img {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
+
 
 #event .business__bg-header,
 #event .fashion__bg-header,
@@ -951,42 +942,60 @@ header {
 }
 
 .event__bg-header img:first-child {
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 235px;
     height: 282px;
-    z-index: 1;
+
 }
 
 .event__bg-header img:last-child {
+    position: absolute;
+    top: 0;
+    right: 0;
     display: none;
     width: 964px;
     height: 945px;
-    z-index: 1;
+
 }
 
 .fashion__bg-header img:first-child {
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 299px;
     height: 351px;
-    z-index: 1;
+
 }
 
 .fashion__bg-header img:last-child {
     display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 1084px;
     height: 1039px;
-    z-index: 1;
+
 }
 
 .business__bg-header img:first-child {
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 188px;
     height: 255px;
-    z-index: 1;
+
 }
 
 .business__bg-header img:last-child {
+    position: absolute;
+    top: 0;
+    right: 0;
     display: none;
     width: 964px;
     height: 945px;
-    z-index: 1;
+
 }
 
 .event__hero-bg {
@@ -1052,6 +1061,7 @@ header {
     height: 343px;
     top: -10px;
     right: -135px;
+    z-index: -3;
 
 }
 
@@ -1099,7 +1109,7 @@ header {
     height: 302px;
     top: 0;
     right: -150px;
-
+    z-index: -3;
     transform: rotate(20.85deg);
 }
 
@@ -1172,6 +1182,110 @@ header {
 .fashion__bg-6,
 .fashion__bg-7,
 .fashion__bg-8 {
+    display: none;
+}
+
+.business__line-1 {
+    position: absolute;
+    width: 294px;
+    height: 262px;
+    top: 100px;
+    right: -260px;
+    opacity: 0.5;
+    transform: rotate(59.42deg);
+    z-index: -3;
+}
+
+.business__video-container {
+    position: relative;
+}
+
+.business__line-2 {
+    position: absolute;
+    width: 316px;
+    height: 282px;
+    top: 40px;
+    left: -240px;
+    opacity: 0.5;
+    transform: rotate(59.42deg);
+    z-index: -3;
+}
+
+.business__line-3 {
+    position: absolute;
+    width: 413px;
+    height: 446px;
+    top: 242px;
+    right: -233px;
+    opacity: 0.7;
+    transform: rotate(-154.82deg);
+
+    z-index: -3;
+}
+
+.business__line-4 {
+    position: absolute;
+    width: 356px;
+    height: 334px;
+    top: 378px;
+    right: -120px;
+    transform: rotate(59.42deg);
+    z-index: -3;
+}
+
+.business__line-5 {
+    position: absolute;
+    width: 673px;
+    height: 600px;
+    bottom: -80px;
+    left: -265px;
+    transform: rotate(59.42deg);
+    z-index: -3;
+}
+
+.business__line-6 {
+    display: none;
+}
+
+.business__bg-1 {
+    position: absolute;
+    max-width: 1400px;
+    height: auto;
+    top: -250px;
+    left: -500px;
+    z-index: -1;
+}
+
+.business__bg-2 {
+    display: none;
+}
+
+.business__bg-3 {
+    position: absolute;
+    max-width: 1400px;
+    height: auto;
+    bottom: -1500px;
+    left: -500px;
+    z-index: -1;
+    transform: rotate(-169.82deg);
+}
+
+.business__bg-4 {
+    display: none;
+}
+
+.business__bg-5 {
+    position: absolute;
+    max-width: 1400px;
+    height: auto;
+    bottom: -500px;
+    right: -600px;
+    z-index: -1;
+    transform: rotate(24.49deg);
+}
+
+.business__bg-6,
+.business__bg-7 {
     display: none;
 }
 
@@ -1402,7 +1516,6 @@ header {
         height: 215px;
         filter: blur(10px);
         transform: rotate(-30deg);
-
     }
 
     footer .ball {
@@ -1411,7 +1524,6 @@ header {
         height: 607px;
         right: -120px;
         bottom: -470px;
-
     }
 
     .department__container .ball {
@@ -1473,7 +1585,6 @@ header {
     }
 
     .fashion__line-1 {
-
         width: 806px;
         height: 828px;
         top: -150px;
@@ -1487,14 +1598,55 @@ header {
     }
 
     .fashion__bg-2 {
-
         max-width: 1400px;
         height: auto;
         bottom: -600px;
         left: -538px;
         transform: rotate(24.49deg);
+    }
+
+    .business__line-1 {
+        width: 1115px;
+        height: 994px;
+        top: -500px;
+        right: -160px;
+    }
+
+    .business__line-2 {
+
+        width: 890px;
+        height: 793px;
+        top: -273px;
+        left: -700px;
 
     }
+
+    .business__line-3 {
+        width: 890px;
+        height: 793px;
+        top: 363px;
+        right: -650px;
+        transform: rotate(59.42deg);
+
+    }
+
+    .business__line-4 {
+        width: 890px;
+        height: 793px;
+        top: -140px;
+        right: -600px;
+
+    }
+
+    .business__line-5 {
+        width: 673px;
+        height: 600px;
+        bottom: 55px;
+        left: -282px;
+
+    }
+
+
 }
 
 @media screen and (min-width: 850px) {
@@ -1619,6 +1771,9 @@ header {
     }
 
     #business .trade__item {
+        width: 100%;
+        max-width: 610px;
+
         height: 501px;
         zoom: 0.75;
         margin: 0;
@@ -1964,6 +2119,100 @@ header {
         left: -600px;
         transform: rotate(300deg);
         z-index: -1;
+    }
+
+    .business__line-5 {
+        width: 890px;
+        height: 793px;
+        bottom: -300px;
+        left: -900px;
+
+    }
+
+    .business__line-6 {
+        display: block;
+        position: absolute;
+        width: 890px;
+        height: 793px;
+        bottom: -515px;
+        right: -446px;
+        transform: rotate(59.42deg);
+        z-index: -3;
+    }
+
+    .business__bg-1 {
+        left: -1000px;
+    }
+
+    .business__bg-2 {
+        display: block;
+        position: absolute;
+        max-width: 1800px;
+        height: auto;
+        top: -250px;
+        right: -1200px;
+        z-index: -1;
+    }
+
+    .business__bg-3 {
+        position: absolute;
+        max-width: 1400px;
+        height: auto;
+        top: -295px;
+        left: -345px;
+        z-index: -1;
+        transform: rotate(-108.39deg);
+    }
+
+    .business__bg-4 {
+        display: block;
+        position: absolute;
+        max-width: 1400px;
+        height: auto;
+        top: -200px;
+        left: -800px;
+        z-index: -1;
+        transform: rotate(24.49deg);
+    }
+
+    .business__bg-5 {
+        position: absolute;
+        max-width: 1400px;
+        height: auto;
+        bottom: -1500px;
+        right: -900px;
+        z-index: -1;
+        transform: rotate(275deg);
+    }
+
+    .partners__container {
+        position: relative;
+    }
+
+    .business__bg-6 {
+        display: block;
+        position: absolute;
+        max-width: 1400px;
+        height: auto;
+        top: -500px;
+        right: -750px;
+        z-index: -1;
+        transform: rotate(288deg);
+    }
+
+    .direction__container {
+        position: relative;
+    }
+
+    .business__bg-7 {
+        display: block;
+        position: absolute;
+        max-width: 1400px;
+        height: auto;
+        top: 0;
+        right: -750px;
+        z-index: -1;
+
     }
 }
 
