@@ -322,9 +322,13 @@ $(document).ready(function () {
 $(document).ready(function() { 
 
 const swiper = new Swiper('.direction__slider', {
-
+  loop: true,
+  speed: 400,
   spaceBetween: 5,
   slidesPerView: 1,
+  allowSlideNext: true,
+  allowSlidePrev: true,
+  allowTouchMove: true,
   breakpoints: {
     // Для мобильных устройств шириной до 767px
     767: {
