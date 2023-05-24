@@ -322,32 +322,9 @@ $(document).ready(function () {
 $(document).ready(function() { 
 
 const swiper = new Swiper('.direction__slider', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-  speed: 400,
+
   spaceBetween: 100,
   slidesPerView: 1,
-  allowSlideNext: true,
-  allowSlidePrev: true,
-  centeredSlides: true,
-  breakpoints: {
-    // when window width is >= 320px
-    320: {
-      slidesPerView:12,
-      spaceBetween: 20
-    },
-    // when window width is >= 480px
-    480: {
-      slidesPerView: 1,
-      spaceBetween: 30
-    },
-    // when window width is >= 640px
-    640: {
-      slidesPerView: 1,
-      spaceBetween: 40
-    }
-  },
 
   
   // If we need pagination
@@ -357,8 +334,8 @@ const swiper = new Swiper('.direction__slider', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.next',
-    prevEl: '.prev',
+    
+    prevEl: '.prev',nextEl: '.next',
   },
 
 
