@@ -323,7 +323,7 @@ $(document).ready(function() {
 
 const swiper = new Swiper('.direction__slider', {
 
-  spaceBetween: 100,
+  spaceBetween: 5,
   slidesPerView: 1,
 
   
