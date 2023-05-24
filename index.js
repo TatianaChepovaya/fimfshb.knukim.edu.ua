@@ -325,7 +325,21 @@ const swiper = new Swiper('.direction__slider', {
 
   spaceBetween: 5,
   slidesPerView: 1,
-
+  breakpoints: {
+    // Для мобильных устройств шириной до 767px
+    767: {
+      slidesPerView: 1,
+    },
+    // Для планшетов и более широких устройств
+    768: {
+      slidesPerView: 2,
+    },
+    // Для десктопных устройств
+    1024: {
+      slidesPerView: 3,
+    }
+    // Добавьте больше разрешений по вашему выбору
+  },
   
   // If we need pagination
   pagination: {
